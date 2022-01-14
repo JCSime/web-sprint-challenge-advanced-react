@@ -2,12 +2,25 @@ import { rest } from 'msw'
 
 const plantsData = [
   {
+    name: "Staghorn Fern",
+    id: 67148,
+    scientificName: "Platycerium bifurcatum",
+    difficulty: "medium",
+    light: "indirect",
+    img:"https://i.ibb.co/sK2VHD5/plant1.jpg",
+    sizes: ["small"],
+    watering: 2,
+    description:
+      "Originally from South Africa, Jade loves sun-drenched beaches, the occasional surf, and sandy soils. Too much water too often doesn't sit well with her, so maybe offer her a beer? (Please don't give your plants beer).",
+    price: 15,
+  },
+  {
     name: "Peperomia Rosso",
     id: 143,
     scientificName: "Peperomia caperata rosso",
     difficulty: "easy",
     light: "direct",
-    img:"./plants/plant1.jpg",
+    img:"https://i.ibb.co/YPTdbW1/plant2.jpg",
     sizes: ["small"],
     watering: 2,
     description:
@@ -20,7 +33,7 @@ const plantsData = [
     scientificName: "Senecio peregrinus",
     difficulty: "easy",
     light: "direct",
-    img:"./plants/plant2.jpg",
+    img:"https://i.ibb.co/SXNNkPy/plant3.jpg",
     sizes: ["small"],
     watering: 2,
     description:
@@ -33,7 +46,7 @@ const plantsData = [
     scientificName: "Sansevieria zeylanica",
     difficulty: "easy",
     light: "direct",
-    img:"./plants/plant3.jpg",
+    img:"https://i.ibb.co/jgFjqf4/plant4.jpg",
     sizes: ["small", "medium"],
     watering: 2,
     description:
@@ -46,7 +59,7 @@ const plantsData = [
     scientificName: "Zamioculcas zamiifolia",
     difficulty: "easy",
     light: "direct",
-    img:"./plants/plant4.jpg",
+    img:"https://i.ibb.co/9tQccSR/plant5.jpg",
     sizes: ["small", "medium"],
     watering: 2,
     description:
@@ -59,7 +72,7 @@ const plantsData = [
     scientificName: "Crassula ovata",
     difficulty: "easy",
     light: "direct",
-    img:"./plants/plant5.jpg",
+    img:"https://i.ibb.co/y80nWqV/plant6.jpg",
     sizes: ["small"],
     watering: 2,
     description:
@@ -72,7 +85,7 @@ const plantsData = [
     scientificName: "Davallia fejeensis",
     difficulty: "medium",
     light: "indirect",
-    img:"./plants/plant6.jpg",
+    img:"https://i.ibb.co/NKvW2W0/plant7.jpg",
     sizes: ["small"],
     watering: 4,
     description:
@@ -85,26 +98,13 @@ const plantsData = [
     scientificName: "Spathiphyllum wallisii",
     difficulty: "medium",
     light: "low",
-    img:"./plants/plant7.jpg",
+    img:"https://i.ibb.co/sWwyhTZ/plant8.jpg",
     sizes: ["small", "medium"],
     watering: 6,
     description:
       "Don't let the 'peace' part fool you—she's here to grab your attention by the horns with her lush leaves, pearly white blooms, and air filtering prowess. She might need more attention than others, but like they say, nothing good comes easy.",
     price: 26,
-  },
-  {
-    name: "Staghorn Fern",
-    id: 67148,
-    scientificName: "Platycerium bifurcatum",
-    difficulty: "medium",
-    light: "indirect",
-    img:"./plants/plant8.jpg",
-    sizes: ["small"],
-    watering: 2,
-    description:
-      "Originally from South Africa, Jade loves sun-drenched beaches, the occasional surf, and sandy soils. Too much water too often doesn't sit well with her, so maybe offer her a beer? (Please don't give your plants beer).",
-    price: 15,
-  },
+  }
 ];
 
 export const handlers = [
